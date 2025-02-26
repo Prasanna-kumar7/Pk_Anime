@@ -1,3 +1,23 @@
+This is a simple web app developed to search anime 
+search anime name and it will show related images and titles
+It is Developed using React
+Fetching the API using Async and Await and Fetch Function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
