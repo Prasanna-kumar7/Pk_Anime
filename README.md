@@ -1,7 +1,10 @@
-This is a simple web app developed to search anime 
-search anime name and it will show related images and titles
+# This is a simple web app developed to search anime 
+
+Search anime name and it will show related images and titles
+
 It is Developed using React
-Fetching the API using Async and Await and Fetch Function
+
+Fetching the API using Async/Await and Fetch Function
 
 
 
