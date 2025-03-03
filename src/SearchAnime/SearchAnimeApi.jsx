@@ -23,25 +23,32 @@ const SearchAnimeApi = () => {
 
   return (
     <>
-      <nav className="nav_container">
-        <div className="nav_container-search">
-          <input
-            className="search"
-            type="search"
-            placeholder="Search Anime"
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-      </nav>
-      <header>
-        <h1 className="logo">PK Anime</h1>
-      </header>
+
+      <div className="header">
+        <header className="logo">
+            <h1 >PK Anime</h1>
+          </header>
+          <nav className="nav_container">
+            <div className="nav_container-search">
+              <input
+                className="search"
+                type="search"
+                placeholder="Search Anime"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
+          </nav>
+      </div>
 
       <div className="anime_wrap">
         <div className="anime_container">
           <SearchAnime searchAnime={animeData} />
         </div>
       </div>
+
+      <footer className="footer">
+        <p>&copy; Copyright, All rights reserved.</p>
+      </footer>
     </>
   );
 };

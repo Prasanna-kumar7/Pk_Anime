@@ -5,20 +5,43 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
-    color: white;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
-    font-size: 3rem;
-}
 body{
     background: hsl(0, 0%, 9%);
     color: white;
 }
 
 
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 20px; */
+    padding: 40px 50px;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    color: white;
+    text-align: center;
+    /* margin: 30px 0px 0px 0px; */
+    width: 40%;
+    text-align: left;
+    /* margin-right: ; */
+    font-size: 1.5rem;
+}
+
+.nav_container-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+    height: 60px;
+}
+
 .search {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 350px;
     height: 50px;
     border-radius: 5px;
@@ -32,30 +55,42 @@ body{
 
 }
 
-.nav_container-search{
+
+.anime_wrap {
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* background: black; */
-    height: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px cyan solid; */
+    padding-top: 40px;
+    width: 100%;
 }
 
-
-
 .anime_container{
+    /* background-color: antiquewhite; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     place-items: center;
-    gap: 20px 0px;
-    width: 70%;
+    gap: 20px 20px;
+    width: 90%;
     margin: 80px auto;
+    padding: 30px;
 }
 
 .anime_card{
-    width: 200px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 5px;
     height:auto;
-    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
 
+.anime_card:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(128, 128, 128, 0.2), 0 6px 20px 0 rgba(128, 128, 128, 0.19);
 }
 
 img {
@@ -67,10 +102,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .anime_text{
     margin-top: 5px;
+    width: 200px;
 }
 
 .anime_text p{
@@ -85,14 +122,15 @@ img {
     letter-spacing: 1.5px;
 }
 
-
-.anime{
-    width: 200px;
-    /* place-self: center; */
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    width: 100%;
 }
 
-.anime_wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer p{
+    color: lightgray;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
