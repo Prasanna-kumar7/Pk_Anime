@@ -1,12 +1,12 @@
 import React from "react";
 
-const SearchAnime = ({ searchAnime }) => {
+const SearchAnime = ({ searchanime, setAnimeDetails }) => {
   return (
     <>
-      {searchAnime
-        ? searchAnime.map((anime) => {
+      {searchanime
+        ? searchanime.map((anime) => {
             return (
-              <div className="anime" key={anime.mal_id}>
+              <div className="anime" key={anime.mal_id} onClick={()=>setAnimeDetails(anime)}>
                 <div className="anime_card">
                   <div className="anime_img">
                     <img
